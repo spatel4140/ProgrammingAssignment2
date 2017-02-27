@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
     # if the determinant is 0, the matrix is invertible
     # calling solve on an invertible matrix will return an error
     data <- x$get()
-    i <- if (det(x) != 0) {
+    i <- if (det(data) != 0) {
         solve(data)
     }
     else {
